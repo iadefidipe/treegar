@@ -1,7 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import Link from "next/link"
-import logo from "../public/assets/logo-treegar.svg"
+import logo from "../../public/assets/logo-treegar.svg"
 import styled from "styled-components"
 
 const Wrapper = styled.div`

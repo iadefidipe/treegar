@@ -1,14 +1,14 @@
 import styled from "styled-components"
 import pageData from "../../data/pageData"
 import Link from "next/link"
-import { Button } from "./Buttons"
+import { Button } from "../shared/Buttons"
 import { navText } from "../shared/typography"
 
 const Wrapper = styled.nav`
   display: flex;
   align-items: center;
   gap: 1rem;
-  
+
   @media (min-width: 768px) {
     gap: 5rem;
   }
@@ -51,12 +51,14 @@ function Nav() {
     <Wrapper>
       <NavLinks>
         {pageData.navText.map((text, index) => (
-          <Link href={text.link} key={index}>
+          <Link href={text.link} passHref key={index}>
             <NavLink>{text.text}</NavLink>
           </Link>
         ))}
       </NavLinks>
-      <Button color>Get the app</Button>
+      <Link href='/Getapp' passHref>
+        <Button color>Get the app</Button>
+      </Link>
     </Wrapper>
   )
 }

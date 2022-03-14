@@ -16,6 +16,7 @@ a {
   padding: 0;
 }
 body {
+  font-family: "Red Hat Text", sans-serif;
   font-size: 1rem;
   font-size: 1 rem;
   line-height: 1.625rem;
