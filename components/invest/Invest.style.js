@@ -16,7 +16,8 @@ export const Wrapper = styled.section`
 export const SectionContainer = styled(InnerWrapper)`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
+  
 `
 export const SectionHeader = styled(Heading2)`
   @media (min-width: 768px) {
@@ -28,7 +29,9 @@ export const InvestContainer = styled.div`
   max-width: 572px;
   flex-direction: column;
   gap: 20px;
-  margin: 0 auto;
+  @media (min-width: 768px) {
+    margin: 0 auto;
+  }
 `
 export const InvestWrap = styled.div`
   display: flex;
@@ -39,7 +42,9 @@ export const IconContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 30px;
-  margin: 0 auto;
+  @media (min-width: 768px) {
+    margin: 0 auto;
+  }
 `
 export const IconWrap = styled.button`
   outline: none;
@@ -51,7 +56,10 @@ export const Icon = styled(Image)``
 export const YearTabContaner = styled.div`
   display: flex;
 
-  gap: 24px;
+  justify-content: space-between;
+  @media (min-width: 768px) {
+    gap: 24px;
+  }
 `
 export const YearTab = styled.button`
   ${tabBasestyle}
@@ -111,7 +119,6 @@ export const PercentWrap = styled.div`
 export const Percentage = styled.p``
 
 export const ProfitWrap = styled.div`
-
   & > p:first-of-type {
     margin-bottom: 8px;
     color: ${({ theme }) => theme.colors.secGrey};

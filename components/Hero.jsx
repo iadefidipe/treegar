@@ -59,18 +59,18 @@ function Hero() {
 
   // setInterval(changeImage, 7000)
 
-  const autoUpdate = useCallback(() => {
-    // setInterval(changeImage, 17000)
-    clearInterval()
-  }, [current])
+  // const autoUpdate = useCallback(() => {
+  //   // setInterval(changeImage, 17000)
+  //   clearInterval()
+  // }, [current])
 
   return (
     <Wrapper>
       <HeroWrap>
         <HeroImageWrap>
           {pageData.screenScroller.map((screen, index) => {
-            autoUpdate()
-            console.log(current)
+            // autoUpdate()
+            // console.log(current)
 
             return (
               <HeroImageContainer key={index} index={index} current={current}>

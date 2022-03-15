@@ -1,16 +1,15 @@
 import styled from "styled-components"
-import { Heading2, Heading6 } from "./shared/Headings"
-import { fontStyleB } from "./shared/typography"
+import { Heading2, Heading3 } from "./shared/Headings"
+import { fontRegular } from "./shared/typography"
 import { BorderButton } from "./shared/Buttons"
 import { maxWidth } from "./shared/BaseStyles"
 
-
 const Wrapper = styled.section`
-${maxWidth}
+  ${maxWidth}
   padding: 100px 21px;
 
   & > *:not(:last-child) {
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 
   @media (min-width: 768px) {
@@ -18,22 +17,21 @@ ${maxWidth}
   }
 `
 const SectionHeader = styled(Heading2)``
-const SubHeader = styled(Heading6)`
+const SubHeader = styled(Heading3)`
   & > span {
     color: ${(props) => props.theme.colors.shade};
   }
 `
 const SectionText = styled.p`
-  ${fontStyleB}
+  ${fontRegular}
 `
 const AboutWrap = styled.div`
-
   & > *:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   @media (min-width: 768px) {
     width: 80%;
- margin: 0 auto ;
+    margin: 0 auto;
     & p {
       display: inline;
       padding-right: 1px;

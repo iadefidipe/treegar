@@ -41,8 +41,8 @@ export const Heading3 = styled.h3`
 export const Heading4 = styled.h4`
   ${baseStyles}
   font-size: 1.25rem;
-  font-weight: ${(props) => props.theme.weight.bold};
-  line-height: 60px;
+  font-weight: ${(props) => props.theme.weight.semiBold};
+  /* line-height: 60px; */
 
   @media (min-width: 768px) {
     font-size: 2.5rem;

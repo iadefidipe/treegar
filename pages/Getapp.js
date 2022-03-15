@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Heading1, Heading2 } from "../components/shared/Headings"
-import { fontStyleB } from "../components/shared/typography"
+import { fontRegular } from "../components/shared/typography"
 import { IconButton } from "../components/shared/Buttons"
 
 const Wrapper = styled.main`
@@ -24,7 +24,7 @@ const PlainText = styled.p`
   display: grid;
   gap: 50px;
 
-  ${fontStyleB}
+  ${fontRegular}
 `
 const ButtonWrap = styled.div`
   display: flex;

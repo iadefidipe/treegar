@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import { Heading1, Heading2, Heading3 } from "../shared/Headings"
-import { fontStyleB } from "../shared/typography"
+import { fontRegular } from "../shared/typography"
 import { IconButton } from "../shared/Buttons"
 import { maxWidth, InnerWrapper } from "../shared/BaseStyles"
 
@@ -40,8 +40,7 @@ export const SectionHeader = styled(Heading2)`
 export const SectionText = styled.p`
   display: grid;
   gap: 50px;
-
-  ${fontStyleB}
+  ${fontRegular}
 `
 export const ButtonWrap = styled.div`
   display: flex;

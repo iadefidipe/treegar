@@ -1,7 +1,7 @@
 import styled from "styled-components"
 import { Heading4, Heading5 } from "./shared/Headings"
 import pageData from "../data/pageData"
-import { fontStyleB } from "./shared/typography"
+import { fontRegular } from "./shared/typography"
 import { maxWidth } from "./shared/BaseStyles"
 
 const Wrapper = styled.section`
@@ -40,7 +40,7 @@ const FeatureHeader = styled(Heading5)`
   margin-bottom: 10px;
 `
 const FeatureText = styled.p`
-  ${fontStyleB}
+  ${fontRegular}
 `
 const BackgroundWrap = styled.div`
   /* border: 2px solid green; */
