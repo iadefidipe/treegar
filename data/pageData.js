@@ -24,6 +24,7 @@ import Screen3 from "../public/assets/Screen-Scroller-3.png"
 import Screen4 from "../public/assets/Screen-Scroller-4.png"
 import Screen5 from "../public/assets/Screen-Scroller-5.png"
 
+
 const pageData = {
   screenScroller: [ Screen1, Screen2, Screen3, Screen4, Screen5 ],
   navText: [
@@ -94,8 +95,8 @@ const pageData = {
       testimony: `When the treegar team approached me to test the app, my initial reaction was to show non-interest since I knew nothing about stock markets. I am happy I took the chance. I invested $5 in a company I love. I’ll watch it grow🤞`,
     },
     {
-      name: `Bridget`,
-      title: `Tobechukwu`,
+      name: `Tobechukwu`,
+      title: `Investment Banker at GTBank `,
       testimony: `I love the user interface of the treegar app and the ability to trade during extended hours. Kudos to the team for creating a beautiful app with amazing features.`,
     },
   ],
@@ -155,21 +156,7 @@ const pageData = {
       ],
     },
 
-    policy: [
-      `Returns reflected are cumulative returns from December 31, 2021, December 31, 2020,	December 31, 2019,	December 31, 2018 and	December, 29, 2017 for 1 year, 2 years, 3 years & 4 years respectively.`,
-
-      `Past performance is not an indicator of future outcomes.`,
-
-      `Treegar does not provide investment advice and individual investors should make their own decisions or seek independent advice. The value of investments can go up as well as down and you may receive back less than your original investment. All investments involve risk, including the possible loss of capital. You may not get back what you have originally invested. The material provided herein is general in nature and does not take into account your objectives, financial situation or needs. Treegar is a technology platform, not a registered broker-dealer or investment adviser`,
-
-      `Brokerage services for US-traded securities are provided by Alpaca Securities LLC. Alpaca is a regulated member of FINRA/SIPC, which protects securities customers of its members up to $500,000 (including $250,000 for claims for cash), per customer. Explanatory brochure can be found here: https://www.sipc.org/about-sipc/.`,
-
-      `Nigerian account traded securities are provided by Apel Assets Limited, a SEC registered broker-dealer and member of the Nigerian Stock Exchange. Apel Assets does not make any personal recommendations to buy, sell or otherwise deal in investments. Investors make their own investment decisions. The services and securities provided by Apel Assets Limited may not be suitable for all customers and, if you have any doubts, you should seek advice from an independent financial adviser.`,
-
-      `Trademarks and logos are the property of their respective owners and do not represent endorsements of any kind. Unless otherwise noted, Treegar and its affiliates are not partners, affiliates, or licensees of these companies.`,
-
-      `Content, news, research, tools, market data and securities symbols are for educational and illustration purposes only and are not substitutes for professional advice. All information provided is provided in good faith, however we make no representation or warranty of any kind, express or implied, regarding the accuracy, adequacy, validity, reliability, availability or completeness of any information on this website, our Gotrade mobile application or our associated social media pages.`,
-    ],
+    
   },
 }
 

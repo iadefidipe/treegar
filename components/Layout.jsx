@@ -1,11 +1,11 @@
 import React from "react"
 import Styled, { ThemeProvider } from "styled-components"
 import theme from "../data/theme"
-import Header from "./Header/Header"
+import Header from "./header/Header"
 import GlobalStyles from "../styles/GlobalStyles"
-import Footer from "./Footer"
+import Footer from "./footer/Footer"
 
-function Layout({children}) {
+function Layout({ children }) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />

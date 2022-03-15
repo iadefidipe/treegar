@@ -1,4 +1,4 @@
-import { css } from "styled-components"
+import styled, { css } from "styled-components"
 
 const baseStyles = css`
   font-family: "Red Hat Text", sans-serif;
@@ -6,34 +6,59 @@ const baseStyles = css`
   color: ${(props) => props.theme.colors.pryWhite};
 `
 
-export const fontStyleA = css`
-  ${baseStyles}
-  font-size: 1.25rem;
-`
-
-export const fontStyleB = css`
+export const fontHero = styled.p`
   ${baseStyles}
   font-size: 1rem;
   color: ${(props) => props.theme.colors.secGrey};
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+`
 
+export const fontRegular = styled.p`
+  ${baseStyles}
+  font-size: 1rem;
+  color: ${(props) => props.theme.colors.secGrey};
 `
 export const buttonText = css`
   ${baseStyles}
   font-weight: ${(props) => props.theme.weight.bold};
-  font-size: 1.125rem;
+  font-size: 0.75rem;
+  @media (min-width: 768px) {
+    font-size: 1.125rem;
+  }
 `
 
 export const navText = css`
   ${baseStyles}
-  font-size:  1rem;
+  font-size:  0.75rem;
   line-height: 1rem;
   font-weight: ${(props) => props.theme.weight.mid};
+  @media (min-width: 768px) {
+    font-size: 1rem;
+  }
 `
 
-export const footerText = css`
+export const fontName = styled.p`
   ${baseStyles}
-  font-size:  0.8125rem;
-  line-height: 1.5rem;
-  font-weight: ${(props) => props.theme.weight.regular};
-  color: ${(props) => props.theme.colors.secGrey};
+  font-size:  1em;
+  line-height: 2rem;
+  font-weight: ${(props) => props.theme.weight.mid};
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
+`
+
+export const fontInvest = styled.p`
+  ${baseStyles}
+  font-size: 0.875rem;
+  font-weight: ${(props) => props.theme.weight.mid};
+  
+`
+
+export const fontProfit = styled.p`
+  ${baseStyles}
+  font-size: 1.4375rem;
+  font-weight: ${(props) => props.theme.weight.bold};
+  
 `

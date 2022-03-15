@@ -2,8 +2,11 @@ import styled from "styled-components"
 import { Heading2, Heading6 } from "./shared/Headings"
 import { fontStyleB } from "./shared/typography"
 import { BorderButton } from "./shared/Buttons"
+import { maxWidth } from "./shared/BaseStyles"
+
 
 const Wrapper = styled.section`
+${maxWidth}
   padding: 100px 21px;
 
   & > *:not(:last-child) {

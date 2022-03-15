@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Heading1, Heading2 } from "../components/shared/headings"
+import { Heading1, Heading2 } from "../components/shared/Headings"
 import { fontStyleB } from "../components/shared/typography"
 import { IconButton } from "../components/shared/Buttons"
 
@@ -28,9 +28,8 @@ const PlainText = styled.p`
 `
 const ButtonWrap = styled.div`
   display: flex;
-  justify-content: center ;
+  justify-content: center;
   gap: 13px;
-
 `
 const TextWrap = styled.div`
   display: grid;

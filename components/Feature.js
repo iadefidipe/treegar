@@ -1,9 +1,11 @@
 import styled from "styled-components"
-import { Heading3, Heading5 } from "./shared/Headings"
+import { Heading4, Heading5 } from "./shared/Headings"
 import pageData from "../data/pageData"
 import { fontStyleB } from "./shared/typography"
+import { maxWidth } from "./shared/BaseStyles"
 
 const Wrapper = styled.section`
+  ${maxWidth}
   display: flex;
   flex-direction: column;
   gap: 37px;
@@ -11,8 +13,10 @@ const Wrapper = styled.section`
     flex-direction: row;
     align-items: center;
   }
+  margin-bottom: 70px;
 `
-const SectionHeader = styled(Heading3)`
+
+const SectionHeader = styled(Heading4)`
   & > span {
     color: ${(props) => props.theme.colors.shade};
   }

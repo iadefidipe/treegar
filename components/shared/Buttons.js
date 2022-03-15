@@ -7,7 +7,8 @@ import playStore from "../../public/assets/btn-play-store.svg"
 export const Button = styled.button`
   ${buttonText}
   border-radius: 49px;
-  padding: 13px 18px;
+  padding: 13px 10px;
+
   background-color: ${(props) =>
     props.color ? props.theme.colors.accent : "transparent"};
   border: 1px solid ${(props) => props.theme.colors.accent};
@@ -17,6 +18,10 @@ export const Button = styled.button`
     background-color: ${(props) =>
       props.color ? "transparent" : props.theme.colors.accent};
     color: ${(props) => props.theme.colors.accent};
+  }
+
+  @media (min-width: 768px) {
+    padding: 13px 18px;
   }
 `
 const IconWrapper = styled.span`
@@ -37,7 +42,6 @@ const StyledButton = styled(BorderButton)`
   display: flex;
   align-items: center;
   font-weight: ${(props) => props.theme.weight.regular};
-
 `
 
 export function IconButton({ play }) {

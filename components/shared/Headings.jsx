@@ -8,44 +8,61 @@ const baseStyles = css`
 
 export const Heading1 = styled.h1`
   ${baseStyles}
-  font-size: 2.875rem;
-  line-height: 3.75rem;
+  font-size: 2.25rem;
+  line-height: 2.9375rem;
   font-weight: ${(props) => props.theme.weight.bold};
+
+  @media (min-width: 768px) {
+    font-size: 2.875rem;
+    line-height: 3.75rem;
+  }
 `
 
 export const Heading2 = styled.h2`
   ${baseStyles}
-  font-size: 2.25rem;
+  font-size: 1.25rem;
   font-weight: ${(props) => props.theme.weight.mid};
+
+  @media (min-width: 768px) {
+    font-size: 2.25rem;
+  }
 `
 
 export const Heading3 = styled.h3`
   ${baseStyles}
   font-size: 1.375rem;
   font-weight: ${(props) => props.theme.weight.semiBold};
+
+  @media (min-width: 768px) {
+    font-size: 2.55rem;
+  }
 `
 
 export const Heading4 = styled.h4`
   ${baseStyles}
   font-size: 1.25rem;
   font-weight: ${(props) => props.theme.weight.bold};
+  line-height: 60px;
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+  }
 `
 export const Heading5 = styled.h5`
   ${baseStyles}
   font-size: 1.25rem;
   font-weight: ${(props) => props.theme.weight.mid};
-`
-export const FooterHeading = styled.h2`
-  ${baseStyles}
-  font-size: 1.0625rem;
-  font-weight: ${(props) => props.theme.weight.bold};
+
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
+  }
 `
 
-export const Heading6 = styled(Heading3)`
-  font-size: 2.5rem;
+export const Heading6 = styled.h6`
+  font-size: 1.0625rem;
   line-height: auto;
 
-  @media (max-width: 768px) {
-    font-size: 22px;
+  @media (min-width: 768px) {
+    font-size: 1.25rem;
   }
 `
