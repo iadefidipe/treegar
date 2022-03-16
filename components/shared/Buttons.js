@@ -28,7 +28,7 @@ const IconWrapper = styled.span`
   margin-right: 7px;
 `
 export const BorderButton = styled(Button)`
-     border: 1px solid ${(props) => props.theme.colors.shade};
+  border: 1px solid ${(props) => props.theme.colors.shade};
 
   transition: border 500ms ease-in-out, color 500ms ease-in-out;
   font-size: 12px;
@@ -43,10 +43,10 @@ const StyledButton = styled(BorderButton)`
   align-items: center;
   font-weight: ${(props) => props.theme.weight.regular};
   padding: 12px 10px;
+  border: 1px solid ${(props) => props.theme.colors.pryWhite};
 
-  @media (min-width: 768px){
-  padding: 15px 30px;
-
+  @media (min-width: 768px) {
+    padding: 15px 30px;
   }
 `
 
