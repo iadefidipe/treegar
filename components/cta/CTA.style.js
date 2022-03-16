@@ -5,7 +5,7 @@ import { IconButton } from "../shared/Buttons"
 import { maxWidth, InnerWrapper } from "../shared/BaseStyles"
 
 export const Wrapper = styled.section`
-${maxWidth}
+  ${maxWidth}
   /* text-align: center; */
 
   
@@ -23,7 +23,7 @@ ${maxWidth}
 `
 
 export const CTAContainer = styled(InnerWrapper)`
-display: grid;
+  display: grid;
   gap: 50px;
   padding: 100px 20px;
 `
@@ -40,6 +40,7 @@ export const SectionHeader = styled(Heading2)`
 export const SectionText = styled.p`
   display: grid;
   gap: 50px;
+  opacity: 0.8;
   ${fontRegular}
 `
 export const ButtonWrap = styled.div`

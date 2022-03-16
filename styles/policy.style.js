@@ -31,12 +31,14 @@ export const PolicyContainer = styled.div`
   }
 
   & section:nth-child(2) {
+    ${baseFlex}
+
     & > div:nth-child(3) {
       gap: 0;
-    }
 
-    & > div:nth-child(4) {
-      gap: 0;
+      & > :nth-child(3) {
+        ${baseFlex}
+      }
     }
   }
 
