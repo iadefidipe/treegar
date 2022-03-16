@@ -25,13 +25,13 @@ export const TestimonialWrap = styled.div`
   display: ${({ active, index }) => (active === index ? "flex" : "none")};
   flex-direction: column;
   gap: 20px;
- 
 `
 export const TestimonialText = styled(fontRegular)`
   text-align: center;
-  color: ${(props) => props.theme.colors.pryWhite};
 `
-export const TextWrap = styled.div``
+export const TextWrap = styled.div`
+  height: 80px;
+`
 export const DetailsWrap = styled.div`
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,6 @@ export const DetailsWrap = styled.div`
 export const Detailscontainer = styled.div`
   display: flex;
   flex-direction: column;
-  
 `
 export const Name = styled(fontName)`
   text-align: center;
