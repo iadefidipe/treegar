@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import pageData from "../../data/pageData"
 import Image from "next/image"
 import arrow from "../../public/assets/icon-double-arrow.svg"
@@ -36,7 +36,6 @@ function Invest() {
   const [amount, setAmount] = useState(1)
   const [percent, setPercent] = useState(percentages[0])
   const [profit, setProfit] = useState(getProfit(percent, amount))
-  console.log("array", percentages)
 
   const handleToggle = (index, percentages) => {
     console.log("index", index)
@@ -44,18 +43,17 @@ function Invest() {
     setToggle(index)
 
     setPercentages(pageData.investData.brand[index].percentages)
-
-    console.log("derived", pageData.investData.brand[index].percentages)
-    setPercent(percentages[tabIndex])
-
-    // setPercent(data[index])
   }
   const handleTabToggle = (index) => {
     setActive(index)
 
     setTabIndex(index)
-    setPercent(percentages[index])
   }
+
+  useEffect(() => {
+    setPercent(percentages[tabIndex])
+    setProfit(getProfit(percent, amount))
+  }, [percentages, tabIndex, percent, amount])
 
   return (
     <Wrapper>
@@ -64,10 +62,7 @@ function Invest() {
         <IconContainer>
           {pageData.investData.brand.map((data, index) => (
             <IconWrap
-              onClick={
-                () => handleToggle(index, percentages)
-                // setProfit(getProfit(percent, amount))
-              }
+              onClick={() => handleToggle(index, percentages)}
               key={index}
             >
               <Icon src={toggle == index ? data.icon[1] : data.icon[0]} />
@@ -82,7 +77,6 @@ function Invest() {
                 index={index}
                 onClick={() => {
                   handleTabToggle(index)
-                  setProfit(getProfit(percent, amount))
                 }}
                 active={active}
               >

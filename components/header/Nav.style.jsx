@@ -47,7 +47,7 @@ export const NavLinkWrap = styled.div`
     &::after {
       content: "";
       position: absolute;
-      background-color: ${({ theme }) => theme.colors.accent};
+      background-color: ${({ theme }) => theme.colors.shade};
       height: 3px;
       width: 30px;
       border-radius: 1px;

@@ -27,6 +27,15 @@ export const Heading2 = styled.h2`
     font-size: 2.25rem;
   }
 `
+export const Heading7 = styled(Heading2)`
+  ${baseStyles}
+  font-size: 1.0625rem;
+  font-weight: ${(props) => props.theme.weight.bold};
+
+  @media (min-width: 768px) {
+    font-size: 1.0625rem;
+  }
+`
 
 export const Heading3 = styled.h3`
   ${baseStyles}
