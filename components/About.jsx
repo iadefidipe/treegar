@@ -23,6 +23,7 @@ const SubHeader = styled(Heading3)`
   }
 `
 const SectionText = styled.p`
+  opacity: 0.8;
   ${fontRegular}
 `
 const AboutWrap = styled.div`
@@ -39,7 +40,12 @@ const AboutWrap = styled.div`
   }
 `
 
-const Button = styled(BorderButton)``
+const Button = styled(BorderButton)`
+  padding: 11.5px 27px;
+  @media (min-width: 768px) {
+    padding: 17px 58.5px;
+  }
+`
 
 function About() {
   return (

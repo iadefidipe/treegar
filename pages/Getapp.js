@@ -7,6 +7,7 @@ const Wrapper = styled.main`
   text-align: center;
   display: grid;
   gap: 50px;
+  margin-top: 150px;
   padding: 100px 0;
   background: ${(props) =>
     `url(${props.theme.bg.bgTree.src}) no-repeat right 250px`};

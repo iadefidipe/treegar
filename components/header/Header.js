@@ -7,11 +7,17 @@ import { maxWidth, InnerWrapper } from "../shared/BaseStyles"
 const Wrapper = styled.header`
   ${maxWidth}
 `
-const HeaderContainer = styled(InnerWrapper)`
+const HeaderContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 48px 0;
+  padding: 48px 21px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: ${(props) => props.theme.colors.bg};
+  z-index: 1000;
 
   & > div:first-child {
     flex: 1 83px;

@@ -93,6 +93,7 @@ function Invest() {
             min='0'
             max='1000'
             step='1'
+            value={amount}
             onChange={(e) => {
               setAmount(e.target.value)
               setProfit(getProfit(percent, amount))
@@ -100,7 +101,7 @@ function Invest() {
           />
           <InvestWrap>
             <ProfitWrap>
-              <InvestText>You will have</InvestText>
+              <InvestText>You will have <sup>1</sup></InvestText>
               <Profit>${profit}</Profit>
             </ProfitWrap>
             <PercentWrap>

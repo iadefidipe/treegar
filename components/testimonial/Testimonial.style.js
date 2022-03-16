@@ -42,6 +42,7 @@ export const DetailsWrap = styled.div`
 export const Detailscontainer = styled.div`
   display: flex;
   flex-direction: column;
+  
 `
 export const Name = styled(fontName)`
   text-align: center;

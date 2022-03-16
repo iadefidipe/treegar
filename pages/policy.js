@@ -75,7 +75,7 @@ function policy() {
               </SectionWrap>
               <SubSection>
                 {privacyPolicy.usePersonalInfo.sub.map((section, index) => (
-                  <ListSection>
+                  <ListSection key={index}  >
                     <SubHeader>{section.header}</SubHeader>
                     <PageText>{section.text}</PageText>
                   </ListSection>
@@ -96,7 +96,7 @@ function policy() {
             <SubHeader>{privacyPolicy.yourChoices.header}</SubHeader>
             <PageSubSection>
               {privacyPolicy.yourChoices.sub.map((sub, index) => (
-                <ListSection>
+                <ListSection key={index}>
                   <SubHeader>{sub.header}</SubHeader>
                   <PageText>{sub.text}</PageText>
                 </ListSection>

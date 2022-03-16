@@ -5,11 +5,11 @@ import Image from "next/image"
 import { Heading1 } from "./shared/Headings"
 import pageData from "../data/pageData"
 
-
 const Wrapper = styled.section`
   padding: 0 21px;
+  margin-top: 200px;
   margin-bottom: 100px;
-
+  border: 1px solid red;
   display: flex;
   gap: 25px;
   flex-direction: column;

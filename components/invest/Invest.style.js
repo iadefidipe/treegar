@@ -17,7 +17,6 @@ export const SectionContainer = styled(InnerWrapper)`
   display: flex;
   flex-direction: column;
   gap: 40px;
-  
 `
 export const SectionHeader = styled(Heading2)`
   @media (min-width: 768px) {
@@ -41,8 +40,9 @@ export const InvestWrap = styled.div`
 export const IconContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   @media (min-width: 768px) {
+    gap: 30px;
     margin: 0 auto;
   }
 `
@@ -50,6 +50,8 @@ export const IconWrap = styled.button`
   outline: none;
   background: none;
   border: none;
+  width: 60px;
+  height: 40px;
 `
 export const Icon = styled(Image)``
 
@@ -73,6 +75,7 @@ export const YearTab = styled.button`
     active === index ? theme.colors.accent : theme.colors.tab};
   color: ${(props) => props.theme.colors.pryWhite};
 `
+
 export const InvestText = styled(fontInvest)`
   font-weight: ${(props) => props.theme.weight.mid};
 `
@@ -85,6 +88,7 @@ export const InvestBar = styled.input`
   background: ${(props) => props.theme.colors.shade};
   opacity: 0.7;
   outline: none;
+  border-radius: 50px;
   -webkit-transition: 0.2s;
   transition: opacity 0.2s;
 

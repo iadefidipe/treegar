@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import About from "../components/About"
-import Feature from "../components/Feature"
+import Feature from "../components/feature/Feature"
 
 import CTA from "../components/cta/CTA"
 import Invest from "../components/invest/Invest"
