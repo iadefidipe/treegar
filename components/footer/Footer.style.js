@@ -21,7 +21,6 @@ export const ContactWrap = styled.div`
   & > :nth-child(3),
   & :nth-child(4) {
     p {
-  
       width: 150px;
     }
   }
@@ -61,6 +60,12 @@ export const ContactText = styled(fontRegular)`
     }
   }
 `
-export const ContactLink = styled(fontRegular)``
+export const ContactLink = styled(fontRegular)`
+  cursor: pointer;
+`
 export const ContactLinkWrap = styled.div``
 export const FooterWrap = styled.div``
+
+export const SocialWrap = styled.div`
+  cursor: pointer;
+`

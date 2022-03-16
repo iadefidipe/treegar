@@ -9,8 +9,11 @@ const Wrapper = styled.main`
   gap: 50px;
   margin-top: 150px;
   padding: 100px 0;
-  background: ${(props) =>
-    `url(${props.theme.bg.bgTree.src}) no-repeat right 250px`};
+
+  @media (min-width: 768px) {
+    background: ${(props) =>
+      `url(${props.theme.bg.bgTree.src}) no-repeat right 380px`};
+  }
 `
 
 const MainText = styled(Heading1)``

@@ -7,6 +7,7 @@ import {
   ContactLink,
   ContactLinkWrap,
   FooterContainer,
+  SocialWrap,
 } from "./Footer.style"
 
 import pageData from "../../data/pageData"
@@ -52,9 +53,11 @@ function Footer() {
             </ContactHeader>
             <ContactLinkWrap>
               {pageData.footerData.social.icons.map((icon, index) => (
-                <Link key={index} href={icon.link} passHref>
-                  <Image src={icon.icon} alt={icon.alt} />
-                </Link>
+                <SocialWrap key={index}>
+                  <Link href={icon.link} passHref>
+                    <Image src={icon.icon} alt={icon.alt} />
+                  </Link>
+                </SocialWrap>
               ))}
             </ContactLinkWrap>
           </FooterContact>

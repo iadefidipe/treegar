@@ -13,14 +13,15 @@ export const Wrapper = styled.main`
   ${maxWidth}
 `
 
-export const PageContainer = styled(InnerWrapper)``
+export const PageContainer = styled(InnerWrapper)`
+  margin-top: 200px;
+`
 
 export const PageHeader = styled(Heading1)`
   margin-bottom: 27px;
 `
 
 export const PolicyContainer = styled.div`
- 
   ${baseFlex}
   gap: 51px;
   margin-bottom: 50px;
@@ -31,12 +32,10 @@ export const PolicyContainer = styled.div`
 
   & section:nth-child(2) {
     & > div:nth-child(3) {
-      
       gap: 0;
     }
 
     & > div:nth-child(4) {
-     
       gap: 0;
     }
   }
@@ -76,8 +75,8 @@ export const PolicyContainer = styled.div`
   & section:last-child {
     ${baseFlex}
 
-    &> div{
-      gap:0;
+    &> div {
+      gap: 0;
     }
   }
 `
@@ -88,7 +87,6 @@ export const PageText = styled(fontRegular)`
 
 export const PageSection = styled.section``
 export const PageSubSection = styled.div`
-  
   ${baseFlex}
 `
 
@@ -98,17 +96,12 @@ export const SubHeader = styled(Heading7)`
 export const SubSection = styled.div``
 
 export const SubList = styled.ul`
- 
   padding: 0 21px;
 `
 export const OrderedList = styled.li`
   color: ${(props) => props.theme.colors.secGrey};
 `
 export const ListSection = styled.div`
- 
   ${baseFlex}
-
 `
-export const SectionWrap = styled.div`
-  
-`
+export const SectionWrap = styled.div``
