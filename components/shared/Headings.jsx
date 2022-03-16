@@ -30,11 +30,7 @@ export const Heading2 = styled.h2`
 export const Heading7 = styled(Heading2)`
   ${baseStyles}
   font-size: 1.0625rem;
-  font-weight: ${(props) => props.theme.weight.bold};
-
-  @media (min-width: 768px) {
-    font-size: 1.0625rem;
-  }
+  line-height: auto;
 `
 
 export const Heading3 = styled.h3`

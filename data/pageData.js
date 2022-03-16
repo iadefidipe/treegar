@@ -149,13 +149,23 @@ const pageData = {
     social: {
       headerText: "Social",
       icons: [
-        { icon: linkedin, alt: "treegar-linkedin-link", link: "https://www.linkedin.com/company/treegar/" },
-        { icon: instagram, alt: "treegar-instagram-link", link: "https://www.instagram.com/tradetreegar/" },
-        { icon: twitter, alt: "treegar-twitter-link", link: "https://twitter.com/TradeOnTreegar" },
+        {
+          icon: linkedin,
+          alt: "treegar-linkedin-link",
+          link: "https://www.linkedin.com/company/treegar/",
+        },
+        {
+          icon: instagram,
+          alt: "treegar-instagram-link",
+          link: "https://www.instagram.com/tradetreegar/",
+        },
+        {
+          icon: twitter,
+          alt: "treegar-twitter-link",
+          link: "https://twitter.com/TradeOnTreegar",
+        },
       ],
     },
-
-    
   },
   privacyPolicy: {
     headerText: `Privacy Policy`,
@@ -219,13 +229,13 @@ const pageData = {
     },
 
     personalInfo: {
-      headerText: `
+      header: `
       Changes to your personal information`,
       text: `If your personal information changes during your relationship with us, you may update your information by updating your account profile or emailing us at privacy@treegar.com.`,
     },
 
     usePersonalInfo: {
-      headerText: `
+      header: `
       How We Use Your Personal Information`,
       subText: `
       We use your personal information for the following purposes:`,
@@ -309,7 +319,7 @@ const pageData = {
 
       `,
     },
-    Security: {
+    security: {
       header: `Security`,
       text: `
       We use certain administrative and technical controls designed to improve the confidentiality, integrity and security of information we collect and maintain. No security measures are perfect or impenetrable and we cannot and do not guarantee that information about you will not be accessed, viewed, disclosed, altered, or destroyed by breach of any of our administrative or technical controls.
