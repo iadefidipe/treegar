@@ -122,7 +122,7 @@ const pageData = {
     company: {
       headerText: "Company",
       link: [
-        { text: "Privacy Policy", link: "/" },
+        { text: "Privacy Policy", link: "/policy" },
         { text: "FAQs", link: "/" },
         { text: "Blog", link: "/" },
       ],
@@ -149,9 +149,9 @@ const pageData = {
     social: {
       headerText: "Social",
       icons: [
-        { icon: linkedin, alt: "treegar-linkedin-link", link: "/" },
-        { icon: instagram, alt: "treegar-instagram-link", link: "/" },
-        { icon: twitter, alt: "treegar-twitter-link", link: "/" },
+        { icon: linkedin, alt: "treegar-linkedin-link", link: "https://www.linkedin.com/company/treegar/" },
+        { icon: instagram, alt: "treegar-instagram-link", link: "https://www.instagram.com/tradetreegar/" },
+        { icon: twitter, alt: "treegar-twitter-link", link: "https://twitter.com/TradeOnTreegar" },
       ],
     },
 

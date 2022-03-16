@@ -16,7 +16,7 @@ function Nav() {
         ))}
       </NavLinks>
       <Link href='/Getapp' passHref>
-        <Button color>Get the app</Button>
+        <Button color={true} >Get the app</Button>
       </Link>
     </Wrapper>
   )
