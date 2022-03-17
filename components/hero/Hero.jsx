@@ -30,6 +30,14 @@ const Wrapper = styled.section`
   & > div:nth-of-type(1) {
     order: 2;
   }
+  & > div:last-of-type {
+      
+
+      & > p {
+        opacity: 0.8;
+        margin-bottom: 44px;
+      }
+  }
   @media (min-width: 768px) {
     gap: 90px;
 
@@ -55,10 +63,7 @@ const Wrapper = styled.section`
       order: 1;
       min-width: 384px;
 
-      & > p {
-        opacity: 0.8;
-        margin-bottom: 44px;
-      }
+      
     }
   }
 `
