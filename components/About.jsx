@@ -21,6 +21,9 @@ const SubHeader = styled(Heading3)`
   & > span {
     color: ${(props) => props.theme.colors.shade};
   }
+  @media (min-width: 768px) {
+    line-height: 40px;
+  }
 `
 const SectionText = styled.p`
   opacity: 0.8;

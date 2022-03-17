@@ -30,7 +30,15 @@ export const TestimonialText = styled(fontRegular)`
   text-align: center;
 `
 export const TextWrap = styled.div`
-  height: 80px;
+ 
+  height: 170px;
+  @media (min-width: 428px) {
+    height: 130px;
+  }
+
+  @media (min-width: 568px) {
+    height: 100px;
+  }
 `
 export const DetailsWrap = styled.div`
   display: flex;

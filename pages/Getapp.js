@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { Heading1, Heading2 } from "../components/shared/Headings"
 import { fontRegular } from "../components/shared/typography"
 import { IconButton } from "../components/shared/Buttons"
+import Head from 'next/head'
+
 
 const Wrapper = styled.main`
   text-align: center;
@@ -43,6 +45,10 @@ const TextWrap = styled.div`
 const Button = styled(IconButton)``
 function Getapp() {
   return (
+    <>
+    <Head>
+      <title> Treegar - Get App</title>
+    </Head>
     <Wrapper>
       <MainText>Hey there!👋</MainText>
       <TextWrap>
@@ -57,6 +63,7 @@ function Getapp() {
         <Button />
       </ButtonWrap>
     </Wrapper>
+    </>
   )
 }
 

@@ -16,9 +16,13 @@ export const Wrapper = styled.section`
 `
 
 export const SectionHeader = styled(Heading4)`
-  line-height: 50px;
+  line-height: 30px;
   & > span {
     color: ${(props) => props.theme.colors.shade};
+  }
+
+  @media (min-width: 768px) {
+    line-height: 60px;
   }
 `
 export const FeatureContainer = styled.div`
