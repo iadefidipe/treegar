@@ -15,6 +15,12 @@ const Wrapper = styled.section`
   gap: 25px;
   flex-direction: column;
 
+  @media (max-width: 500px) {
+    background: ${(props) =>
+      `url(${props.theme.bg.bgTree.src}) no-repeat 210px 280px`};
+    background-size: 204.24px 274px;
+  }
+
   & > div:nth-of-type(2) {
     display: flex;
     gap: 15px;
@@ -25,12 +31,18 @@ const Wrapper = styled.section`
     order: 2;
   }
   @media (min-width: 768px) {
+    gap: 90px;
+
+    background: ${(props) =>
+      `url(${props.theme.bg.bgTree.src}) no-repeat 970px 380px`};
+    background-size: none;
+
     flex-direction: row;
     justify-content: space-between;
     /* align-items: center; */
     & > div:first-of-type {
       order: 1;
-      flex: 2 1000px;
+      flex: 2 800px;
       /* border: 2px yellow solid; */
       align-self: center;
     }
@@ -41,7 +53,12 @@ const Wrapper = styled.section`
     & > div:last-of-type {
       /* border: 2px green solid; */
       order: 1;
-      margin-top: 100px;
+      min-width: 384px;
+
+      & > p {
+        opacity: 0.8;
+        margin-bottom: 44px;
+      }
     }
   }
 `
@@ -54,7 +71,10 @@ const HeroWrap = styled.div`
     }
   }
 `
-const HeroHeader = styled(Heading1)``
+const HeroHeader = styled(Heading1)`
+  margin: 20px 0;
+  width: 237px;
+`
 const HeroText = styled.p``
 const HeroButtonWrap = styled.div`
   display: flex;
@@ -85,18 +105,33 @@ const CarouselWrap = styled.div`
   align-items: start;
   flex-direction: column;
   gap: 32px;
-  border: 2px red solid;
+  /* border: 2px red solid; */
 `
 const CarouselTextWrap = styled.div`
-  border: 2px aqua solid;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+
   height: 120px;
-  msOverflowStyle: none;
-	scrollbarWidth: none;
+
+  color: ${({ theme }) => theme.colors.secGrey};
+  transition: 500ms ease-in-out;
+
+  & p:nth-child(4),
+  & p:nth-child(5) {
+    display: none;
+  }
+
+  & p:nth-child(1),
+  & p:nth-child(3) {
+    /* display: none; */
+  }
+
+  & p:nth-child(2) {
+    font-weight: ${({ theme }) => theme.weight.bold};
+    color: ${({ theme }) => theme.colors.pryWhite};
+    font-size: 20px;
+  }
 `
 const CarouselImageWrap = styled.button`
   border: none;
@@ -104,7 +139,7 @@ const CarouselImageWrap = styled.button`
 `
 
 const CarouselText = styled.p`
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 `
 function Hero() {
   const [current, setCurrent] = useState(0)
@@ -117,25 +152,83 @@ function Hero() {
     return () => clearInterval(swapImage)
   }, [current])
 
+  const [index, setIndex] = useState(0)
+  const [goToSlide, SetGoToSlide] = useState(null)
+  const [offSetRadius, setOffsetRadius] = useState(2)
+
+  let slides = [
+    "Real-Time Trading",
+
+    "Fractional Investing",
+
+    "Full Extended Hours Trading",
+
+    "Local Deposit Methods",
+
+    "Stocks & ETFs",
+    "Latest News",
+  ]
+  const slideLength = slides.length
+
+  function mod(a, b) {
+    return ((a % b) + b) % b
+  }
+
+  const modBySlidesLength = (index) => {
+    return mod(index, slideLength)
+  }
+
+  const moveSlide = (direction) => {
+    setIndex(modBySlidesLength(index + direction))
+    SetGoToSlide(null)
+  }
+
+  const clampOffsetRadius = (offsetRadius) => {
+    const upperBound = Math.floor((slides.length - 1) / 2)
+
+    if (offsetRadius < 0) {
+      return 0
+    }
+    if (offsetRadius > upperBound) {
+      return upperBound
+    }
+
+    return offsetRadius
+  }
+
+  const getPresentableSlides = () => {
+    const offsetRadius = clampOffsetRadius(offSetRadius)
+    const presentableSlides = []
+
+    for (let i = -offsetRadius; i < 1 + offsetRadius; i++) {
+      presentableSlides.push(slides[modBySlidesLength(index + i)])
+    }
+
+    console.log("slides", presentableSlides)
+
+    return presentableSlides
+  }
+  useEffect(() => {
+    getPresentableSlides()
+  }, [])
   return (
     <Wrapper>
       <HeroWrap>
         <CarouselWrap>
-          <CarouselImageWrap>
+          <CarouselImageWrap onClick={() => moveSlide(-1)}>
             <Image src={arrowUp} alt='' />
           </CarouselImageWrap>
           <CarouselTextWrap>
-            <CarouselText>Real-Time Trading</CarouselText>
-            <CarouselText>Fractional Investing</CarouselText>
-            <CarouselText>Full Extended Hours Trading</CarouselText>
-            <CarouselText>Local Deposit Methods</CarouselText>
-            <CarouselText>Latest News</CarouselText>
+            {getPresentableSlides().map((slide, index) => (
+              <CarouselText key={index}> {slide} </CarouselText>
+            ))}
           </CarouselTextWrap>
-          <CarouselImageWrap>
+          <CarouselImageWrap onClick={() => moveSlide(1)}>
             <Image src={arrowDown} alt='' />
           </CarouselImageWrap>
         </CarouselWrap>
       </HeroWrap>
+
       <HeroWrap>
         <HeroImageWrap>
           {pageData.screenScroller.map((screen, index) => {

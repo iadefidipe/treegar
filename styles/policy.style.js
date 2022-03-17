@@ -18,7 +18,7 @@ export const PageContainer = styled(InnerWrapper)`
 `
 
 export const PageHeader = styled(Heading1)`
-  margin-bottom: 27px;
+  margin: 200px 0 27px;
 `
 
 export const PolicyContainer = styled.div`
