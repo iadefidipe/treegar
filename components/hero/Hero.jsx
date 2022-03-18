@@ -9,7 +9,6 @@ import arrowDown from "../../public/assets/icon-arrow-down.svg"
 import { maxWidth, InnerWrapper } from "../shared/BaseStyles"
 const Wrapper = styled.section`
   ${maxWidth}
-
 `
 
 const HeroContainer = styled(InnerWrapper)`
@@ -149,7 +148,7 @@ function Hero() {
   }, [current])
 
   const [index, setIndex] = useState(0)
-  const [goToSlide, SetGoToSlide] = useState(null)
+
   const [offSetRadius, setOffsetRadius] = useState(2)
 
   let slides = [
@@ -200,10 +199,9 @@ function Hero() {
       presentableSlides.push(slides[modBySlidesLength(index + i)])
     }
 
-    console.log("slides", presentableSlides)
-
     return presentableSlides
   }
+
   useEffect(() => {
     getPresentableSlides()
   }, [])
@@ -230,7 +228,7 @@ function Hero() {
             {pageData.screenScroller.map((screen, index) => {
               return (
                 <HeroImageContainer key={index} index={index} current={current}>
-                  <Image src={screen} />
+                  <Image src={screen} alt='' />
                 </HeroImageContainer>
               )
             })}
