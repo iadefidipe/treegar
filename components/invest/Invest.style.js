@@ -10,7 +10,8 @@ export const tabBasestyle = css`
   border-radius: 21px;
 `
 export const Wrapper = styled.section`
-  ${maxWidth}
+  margin: 0 21px;
+  
 `
 
 export const SectionContainer = styled(InnerWrapper)`

@@ -5,6 +5,7 @@ import { fontRegular, fontName } from "../shared/typography"
 export const Wrapper = styled.section`
   max-width: 900px;
   margin: 0 auto;
+  margin: 0 21px;
 `
 
 export const SectionHeader = styled(Heading2)`
@@ -30,7 +31,6 @@ export const TestimonialText = styled(fontRegular)`
   text-align: center;
 `
 export const TextWrap = styled.div`
- 
   height: 170px;
   @media (min-width: 428px) {
     height: 130px;

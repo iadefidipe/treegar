@@ -6,20 +6,19 @@ import { Heading1 } from "../shared/Headings"
 import pageData from "../../data/pageData"
 import arrowUp from "../../public/assets/icon-arrow-up.svg"
 import arrowDown from "../../public/assets/icon-arrow-down.svg"
-
+import { maxWidth, InnerWrapper } from "../shared/BaseStyles"
 const Wrapper = styled.section`
+  ${maxWidth}
+
+`
+
+const HeroContainer = styled(InnerWrapper)`
   padding: 0 21px;
   margin-top: 200px;
   margin-bottom: 100px;
   display: flex;
   gap: 25px;
   flex-direction: column;
-
-  @media (max-width: 500px) {
-    background: ${(props) =>
-      `url(${props.theme.bg.bgTree.src}) no-repeat 210px 280px`};
-    background-size: 204.24px 274px;
-  }
 
   & > div:nth-of-type(2) {
     display: flex;
@@ -31,19 +30,13 @@ const Wrapper = styled.section`
     order: 2;
   }
   & > div:last-of-type {
-      
-
-      & > p {
-        opacity: 0.8;
-        margin-bottom: 44px;
-      }
+    & > p {
+      opacity: 0.8;
+      margin-bottom: 44px;
+    }
   }
   @media (min-width: 768px) {
     gap: 90px;
-
-    background: ${(props) =>
-      `url(${props.theme.bg.bgTree.src}) no-repeat 970px 380px`};
-    background-size: none;
 
     flex-direction: row;
     justify-content: space-between;
@@ -62,8 +55,6 @@ const Wrapper = styled.section`
       /* border: 2px green solid; */
       order: 1;
       min-width: 384px;
-
-      
     }
   }
 `
@@ -218,46 +209,45 @@ function Hero() {
   }, [])
   return (
     <Wrapper>
-      <HeroWrap>
-        <CarouselWrap>
-          <CarouselImageWrap onClick={() => moveSlide(-1)}>
-            <Image src={arrowUp} alt='' />
-          </CarouselImageWrap>
-          <CarouselTextWrap>
-            {getPresentableSlides().map((slide, index) => (
-              <CarouselText key={index}> {slide} </CarouselText>
-            ))}
-          </CarouselTextWrap>
-          <CarouselImageWrap onClick={() => moveSlide(1)}>
-            <Image src={arrowDown} alt='' />
-          </CarouselImageWrap>
-        </CarouselWrap>
-      </HeroWrap>
-
-      <HeroWrap>
-        <HeroImageWrap>
-          {pageData.screenScroller.map((screen, index) => {
-            return (
-              <HeroImageContainer key={index} index={index} current={current}>
-                <Image src={screen} />
-              </HeroImageContainer>
-            )
-          })}
-        </HeroImageWrap>
-      </HeroWrap>
-      <HeroWrap>
-        <HeroHeader>Invest Globally</HeroHeader>
-        <HeroText>
-          {" "}
-          Invest in 8,000+ companies listed on the US and local stock exchanges
-          fom as little as <span>$1</span>{" "}
-        </HeroText>
-        <HeroButtonWrap>
-          {" "}
-          <HeroButton play />
-          <HeroButton />{" "}
-        </HeroButtonWrap>
-      </HeroWrap>
+      <HeroContainer>
+        <HeroWrap>
+          <CarouselWrap>
+            <CarouselImageWrap onClick={() => moveSlide(-1)}>
+              <Image src={arrowUp} alt='' />
+            </CarouselImageWrap>
+            <CarouselTextWrap>
+              {getPresentableSlides().map((slide, index) => (
+                <CarouselText key={index}> {slide} </CarouselText>
+              ))}
+            </CarouselTextWrap>
+            <CarouselImageWrap onClick={() => moveSlide(1)}>
+              <Image src={arrowDown} alt='' />
+            </CarouselImageWrap>
+          </CarouselWrap>
+        </HeroWrap>
+        <HeroWrap>
+          <HeroImageWrap>
+            {pageData.screenScroller.map((screen, index) => {
+              return (
+                <HeroImageContainer key={index} index={index} current={current}>
+                  <Image src={screen} />
+                </HeroImageContainer>
+              )
+            })}
+          </HeroImageWrap>
+        </HeroWrap>
+        <HeroWrap>
+          <HeroHeader>Invest Globally</HeroHeader>
+          <HeroText>
+            Invest in 8,000+ companies listed on the US and local stock
+            exchanges fom as little as <span>$1</span>
+          </HeroText>
+          <HeroButtonWrap>
+            <HeroButton play />
+            <HeroButton />
+          </HeroButtonWrap>
+        </HeroWrap>
+      </HeroContainer>
     </Wrapper>
   )
 }

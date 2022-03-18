@@ -10,11 +10,12 @@ const baseFlex = css`
 `
 
 export const Wrapper = styled.main`
-  ${maxWidth}
+    margin: 0 21px;
+
 `
 
 export const PageContainer = styled(InnerWrapper)`
-  margin-top: 200px;
+  
 `
 
 export const PageHeader = styled(Heading1)`

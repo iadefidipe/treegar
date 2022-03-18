@@ -3,6 +3,8 @@ import { Heading2, Heading3 } from "./shared/Headings"
 import { fontRegular } from "./shared/typography"
 import { BorderButton } from "./shared/Buttons"
 import { maxWidth } from "./shared/BaseStyles"
+import Link from "next/link"
+
 
 const Wrapper = styled.section`
   ${maxWidth}
@@ -69,7 +71,7 @@ function About() {
           to Africans.
         </SectionText>
       </AboutWrap>
-      <Button> Sign me up! </Button>
+      <Link href='/Getapp' passHref ><Button> Sign me up! </Button></Link>
     </Wrapper>
   )
 }
