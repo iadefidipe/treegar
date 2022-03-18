@@ -10,14 +10,25 @@ export const Button = styled.button`
   padding: 13px 10px;
 
   background-color: ${(props) =>
-    props.color ? props.theme.colors.accent : "transparent"};
-  border: 1px solid ${(props) => props.theme.colors.accent};
+    props.grey
+      ? props.theme.colors.secGrey
+      : props.color
+      ? props.theme.colors.accent
+      : "transparent"};
+  border: 1px solid
+    ${(props) =>
+      props.grey ? props.theme.colors.secGrey : props.theme.colors.accent};
   transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
 
   &:hover {
     background-color: ${(props) =>
-      props.color ? "transparent" : props.theme.colors.accent};
-    color: ${(props) => props.theme.colors.accent};
+      props.grey
+        ? props.theme.colors.secGrey
+        : props.color
+        ? "transparent"
+        : props.theme.colors.accent};
+    color: ${(props) =>
+      props.grey ? props.theme.colors.pryWhite : props.theme.colors.accent};
   }
 
   @media (min-width: 768px) {

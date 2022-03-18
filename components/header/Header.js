@@ -3,6 +3,8 @@ import Image from "next/image"
 import Logo from "../shared/Logo"
 import Nav from "./Nav"
 import { maxWidth, InnerWrapper } from "../shared/BaseStyles"
+import {useState, useEffect} from 'react' 
+import { useRouter } from "next/router"
 
 const Wrapper = styled.header`
 
@@ -24,6 +26,16 @@ const HeaderContainer = styled(InnerWrapper)`
 `
 
 function Header() {
+  // const router = useRouter()
+  // const [route, setRoute] = useState(null)
+
+  // useEffect( ( ) => {
+
+  //   const handleRouteChange = (url, { shallow }) => {
+  //     if(url )
+  //   }
+
+  // },[route] )
   return (
     <Wrapper>
       <HeaderContainer>
