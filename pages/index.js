@@ -10,6 +10,8 @@ import Head from "next/head"
 
 const Wrapper = styled.main``
 const BgWrap = styled.div`
+    border: 2px red solid;
+
   @media (max-width: 500px) {
     background: ${(props) =>
       `url(${props.theme.bg.bgTree.src}) no-repeat 210px 380px`};
@@ -18,7 +20,7 @@ const BgWrap = styled.div`
 
   @media (min-width: 768px) {
     background: ${(props) =>
-      `url(${props.theme.bg.bgTree.src}) no-repeat 1000px 420px`};
+      `url(${props.theme.bg.bgTree.src}) no-repeat 900px 420px`};
     background-size: none;
   }
 `
@@ -69,10 +71,7 @@ export default function Home() {
           <link rel='apple-touch-icon' href='/favicon.svg' />
           <link rel='manifest' href='%PUBLIC_URL%/manifest.json' />
           <link rel='preconnect' href='https://fonts.gstatic.com' />
-          <link
-            href='https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600;700&display=swap'
-            rel='stylesheet'
-          />
+          
       </Head>
       <Wrapper>
         <BgWrap>

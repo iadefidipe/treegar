@@ -5,8 +5,11 @@ import logo from "../../public/assets/logo-treegar.svg"
 import styled from "styled-components"
 
 const Wrapper = styled.div`
-  min-width: 83px;
-  margin-right: 15px;
+  max-width: 83px;
+
+  @media (min-width: 768px) {
+    max-width: none;
+  }
 `
 const Logo = () => {
   return (

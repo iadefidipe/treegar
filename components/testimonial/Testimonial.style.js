@@ -1,12 +1,15 @@
 import { Heading2 } from "../shared/Headings"
 import styled from "styled-components"
 import { fontRegular, fontName } from "../shared/typography"
+import { InnerWrapper } from "../shared/BaseStyles"
 
 export const Wrapper = styled.section`
   max-width: 900px;
   margin: 0 auto;
   margin: 0 21px;
 `
+
+export const SectionContainer = styled(InnerWrapper )``
 
 export const SectionHeader = styled(Heading2)`
   text-align: center;

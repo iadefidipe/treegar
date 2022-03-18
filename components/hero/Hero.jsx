@@ -228,7 +228,7 @@ function Hero() {
             {pageData.screenScroller.map((screen, index) => {
               return (
                 <HeroImageContainer key={index} index={index} current={current}>
-                  <Image src={screen} alt='' />
+                  <Image src={screen} alt='' quality={100} />
                 </HeroImageContainer>
               )
             })}

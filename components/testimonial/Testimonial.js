@@ -7,7 +7,7 @@ import rightArrow from "../../public/assets/icon-arrow-right.svg"
 import { InnerWrapper } from "../shared/BaseStyles"
 import {
   Wrapper,
-  SectionHeader,
+  SectionHeader,SectionContainer,
   ImageWrap,
   TestimonialContainer,
   TestimonialWrap,
