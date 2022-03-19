@@ -6,5 +6,5 @@ export const InnerWrapper = styled.section`
   border: 2px solid yellow;
 `
 export const maxWidth = css`
-  margin: 0 21px ;
+  padding: 0 21px ;
 `

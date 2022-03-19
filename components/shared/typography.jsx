@@ -9,7 +9,7 @@ const baseStyles = css`
 export const fontHero = styled.p`
   ${baseStyles}
   font-size: 1rem;
-  color: ${(props) => props.theme.colors.secGrey};
+  opacity: 0.8;
   @media (min-width: 768px) {
     font-size: 1.25rem;
   }
@@ -53,12 +53,10 @@ export const fontInvest = styled.p`
   ${baseStyles}
   font-size: 0.875rem;
   font-weight: ${(props) => props.theme.weight.mid};
-  
 `
 
 export const fontProfit = styled.p`
   ${baseStyles}
   font-size: 1.4375rem;
   font-weight: ${(props) => props.theme.weight.bold};
-  
 `

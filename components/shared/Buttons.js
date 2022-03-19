@@ -53,11 +53,13 @@ const StyledButton = styled(BorderButton)`
   display: flex;
   align-items: center;
   font-weight: ${(props) => props.theme.weight.regular};
-  padding: 12px 10px;
+  font-size: 12px;
+  padding: 10px 10px;
   border: 1px solid ${(props) => props.theme.colors.pryWhite};
 
   @media (min-width: 768px) {
-    padding: 15px 30px;
+  font-size: 15px;
+    padding: 13px  23px ;
   }
 `
 

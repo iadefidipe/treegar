@@ -31,6 +31,18 @@ const pageData = {
     { text: "FAQs", link: "/" },
     { text: "Blog", link: "/" },
   ],
+  slides: [
+    "Real-Time Trading",
+
+    "Fractional Investing",
+
+    "Full Extended Hours Trading",
+
+    "Local Deposit Methods",
+
+    "Stocks & ETFs",
+    "Latest News",
+  ],
 
   aboutData: {
     headerText: `Who we are`,

@@ -4,8 +4,8 @@ import bgBrand from "../public/assets/image-brands.png"
 
 const theme = {
   colors: {
-    black: "#181818",
-    bg: "#040404",
+    black: "#151515",
+    bg: "#000",
     accent: "#4CC800",
     pryWhite: "#FFFFFF",
     secGrey: "#828282",

@@ -11,9 +11,9 @@ const Wrapper = styled.header`
   left: 0;
   right: 0;
   z-index: 1000;
+  ${maxWidth}
 `
 const HeaderContainer = styled(InnerWrapper)`
-  ${maxWidth}
   display: flex;
   align-items: center;
   justify-content: space-between;
