@@ -1,40 +1,50 @@
 import styled from "styled-components"
-import { Heading1, Heading2, Heading3 } from "../shared/Headings"
+import { Heading1, Heading2, Heading3, Heading4 } from "../shared/Headings"
 import { fontRegular } from "../shared/typography"
 import { IconButton } from "../shared/Buttons"
 import { maxWidth, InnerWrapper } from "../shared/BaseStyles"
 
 export const Wrapper = styled.section`
   ${maxWidth}
-  /* text-align: center; */
+  padding-top: 150px;
 
-  
   background: ${(props) =>
-    `url(${props.theme.bg.bgBeast.src}) no-repeat 250px -150px`};
-  @media (min-width: 515px) {
+    `url(${props.theme.bg.bgBeastTwo.src}) no-repeat 200px 50px`};
+  @media (min-width: 400px) {
     background: ${(props) =>
-      `url(${props.theme.bg.bgBeast.src}) no-repeat 350px -150px`};
+      `url(${props.theme.bg.bgBeastTwo.src}) no-repeat 250px 50px`};
+  }
+  @media (min-width: 422px) {
+    background: ${(props) =>
+      `url(${props.theme.bg.bgBeastTwo.src}) no-repeat 300px 50px`};
+  }
+  @media (min-width: 458px) {
+    background: none;
   }
   @media (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 150px;
     text-align: center;
     background: ${(props) =>
-      `url(${props.theme.bg.bgBeast.src}) no-repeat left center`};
+      `url(${props.theme.bg.bgBeast.src}) no-repeat -30px -50px `};
   }
 `
 
 export const CTAContainer = styled(InnerWrapper)`
   display: grid;
   gap: 50px;
-  padding: 100px 20px;
+  padding: 0 20px 100px 20px;
 `
 
-export const SubHeader = styled(Heading3)`
+export const SubHeader = styled(Heading4)`
   & > span {
     color: ${(props) => props.theme.colors.shade};
   }
+  @media (min-width: 768px) {
+    margin-bottom: 30px;
+  }
 `
 export const SectionHeader = styled(Heading2)`
-  font-weight: ${(props) => props.theme.weight.bold};
   line-height: 31px;
 `
 export const SectionText = styled.p`

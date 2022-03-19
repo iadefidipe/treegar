@@ -1,19 +1,19 @@
-import { FooterContact, ContactText } from "./Footer.style"
+import { FooterContact, DisclosureText } from "./Footer.style"
 import Link from "next/link"
 
 function Disclaimer() {
   return (
     <FooterContact>
-      <ContactText>
+      <DisclosureText>
         <sup>1</sup> Returns reflected are cumulative returns from December 31,
         2021, December 31, 2020, December 31, 2019, December 31, 2018 and
         December, 29, 2017 for 1 year, 2 years, 3 years & 4 years respectively.
-      </ContactText>
-      <ContactText>
+      </DisclosureText>
+      <DisclosureText>
         Past performance is not an indicator of future outcomes.
-      </ContactText>
+      </DisclosureText>
 
-      <ContactText>
+      <DisclosureText>
         Treegar does not provide investment advice and individual investors
         should make their own decisions or seek independent advice. The value of
         investments can go up as well as down and you may receive back less than
