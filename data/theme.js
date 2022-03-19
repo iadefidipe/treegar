@@ -2,6 +2,8 @@ import bgTree from "../public/assets/bg-pattern-tree.svg"
 import bgBeast from "../public/assets/image-beast.png"
 import bgBrand from "../public/assets/image-brands.png"
 
+import bgBeastTwo from "../public/assets/image-beast-two.png"
+
 const theme = {
   colors: {
     black: "#151515",
@@ -37,6 +39,7 @@ const theme = {
     bgTree,
     bgBeast,
     bgBrand,
+    bgBeastTwo
   },
   bRadius: "15px",
   maxWidth: "1111px",

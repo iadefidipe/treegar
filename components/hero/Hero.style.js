@@ -29,7 +29,6 @@ export const HeroContainer = styled(InnerWrapper)`
     order: 2;
   }
   & > div:last-of-type {
- 
     & > p {
       margin-bottom: 18px;
     }
@@ -37,14 +36,13 @@ export const HeroContainer = styled(InnerWrapper)`
 
   @media (max-width: 568px) {
     & > div:last-of-type {
-     
       & > p {
         max-width: 328px;
       }
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1068px) {
     gap: 90px;
 
     flex-direction: row;
@@ -53,21 +51,19 @@ export const HeroContainer = styled(InnerWrapper)`
     & > div:first-of-type {
       order: 1;
       flex: 2 800px;
-      
+
       align-self: center;
     }
     & > div:nth-of-type(2) {
-    
       order: 1;
     }
     & > div:last-of-type {
-      
       order: 1;
 
       min-width: 384px;
       & > p {
-      margin-bottom: 44px;
-    }
+        margin-bottom: 44px;
+      }
     }
   }
 `
@@ -96,10 +92,8 @@ export const HeroButtonWrap = styled.div`
   display: flex;
   gap: 10px;
   @media (min-width: 768px) {
-  gap: 21px;
-   
+    gap: 21px;
   }
-
 `
 export const HeroButton = styled(IconButton)``
 
@@ -110,7 +104,7 @@ export const HeroImageContainer = styled.div`
   width: 213px;
   height: 450px;
   margin: 20px auto 0 auto;
-  transform: rotate(25deg);
+  transform: rotate(15deg);
 
   display: ${({ current, index }) => (index === current ? "block" : "none")};
   @media (min-width: 768px) {
@@ -122,11 +116,10 @@ export const HeroImageContainer = styled.div`
 
 export const CarouselWrap = styled.div`
   display: flex;
-
   align-items: start;
   flex-direction: column;
   gap: 32px;
-  /* border: 2px red solid; */
+  
 `
 export const CarouselTextWrap = styled.div`
   display: flex;
@@ -145,7 +138,7 @@ export const CarouselTextWrap = styled.div`
 
   & p:nth-child(1),
   & p:nth-child(3) {
-    /* display: none; */
+    
   }
 
   & p:nth-child(2) {
@@ -159,6 +152,4 @@ export const CarouselImageWrap = styled.button`
   background: none;
 `
 
-export const CarouselText = styled.p`
-  /* scroll-snap-align: start; */
-`
+export const CarouselText = styled.p``

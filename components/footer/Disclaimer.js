@@ -23,8 +23,8 @@ function Disclaimer() {
         take into account your objectives, financial situation or needs. Treegar
         is a technology platform, not a registered broker-dealer or investment
         adviser
-      </ContactText>
-      <ContactText>
+      </DisclosureText>
+      <DisclosureText>
         Brokerage services for US-traded securities are provided by Alpaca
         Securities LLC. Alpaca is a regulated member of FINRA/SIPC, which
         protects securities customers of its members up to $500,000 (including
@@ -34,8 +34,8 @@ function Disclaimer() {
           <span> https://www.sipc.org/about-sipc/</span>
         </Link>
         .
-      </ContactText>
-      <ContactText>
+      </DisclosureText>
+      <DisclosureText>
         Nigerian account traded securities are provided by Apel Assets Limited,
         a SEC registered broker-dealer and member of the Nigerian Stock
         Exchange. Apel Assets does not make any personal recommendations to buy,
@@ -44,8 +44,8 @@ function Disclaimer() {
         Assets Limited may not be suitable for all customers and, if you have
         any doubts, you should seek advice from an independent financial
         adviser.
-      </ContactText>
-      <ContactText>
+      </DisclosureText>
+      <DisclosureText>
         Content, news, research, tools, market data and securities symbols are
         for educational and illustration purposes only and are not substitutes
         for professional advice. All information provided is provided in good
@@ -54,7 +54,7 @@ function Disclaimer() {
         reliability, availability or completeness of any information on this
         website, our Gotrade mobile application or our associated social media
         pages.
-      </ContactText>
+      </DisclosureText>
     </FooterContact>
   )
 }

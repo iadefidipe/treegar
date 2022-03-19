@@ -36,7 +36,7 @@ function Testimonial() {
 
   return (
     <Wrapper>
-      <InnerWrapper>
+      <SectionContainer>
         <SectionHeader>What our early user say about us</SectionHeader>
         <SectionWrap>
           <ImageWrap>
@@ -64,7 +64,7 @@ function Testimonial() {
             ))}
           </TestimonialContainer>
         </SectionWrap>
-      </InnerWrapper>
+      </SectionContainer>
     </Wrapper>
   )
 }

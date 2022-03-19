@@ -18,7 +18,7 @@ export const fontHero = styled.p`
 export const fontRegular = styled.p`
   ${baseStyles}
   font-size: 1rem;
-  color: ${(props) => props.theme.colors.secGrey};
+  opacity: 0.8;
 `
 export const buttonText = css`
   ${baseStyles}

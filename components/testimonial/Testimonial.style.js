@@ -1,19 +1,26 @@
 import { Heading2 } from "../shared/Headings"
 import styled from "styled-components"
 import { fontRegular, fontName } from "../shared/typography"
-import { InnerWrapper } from "../shared/BaseStyles"
+import { maxWidth, InnerWrapper } from "../shared/BaseStyles"
 
 export const Wrapper = styled.section`
-  max-width: 900px;
-  margin: 0 auto;
-  margin: 0 21px;
+  ${maxWidth}
+
+  @media (min-width: 768px) {
+    margin-bottom: 200px;
+  }
 `
 
-export const SectionContainer = styled(InnerWrapper )``
+export const SectionContainer = styled(InnerWrapper)`
+  max-width: 900px;
+`
 
 export const SectionHeader = styled(Heading2)`
   text-align: center;
   margin-bottom: 30px;
+  @media (min-width: 768px) {
+    margin-bottom: 68px;
+  }
 `
 
 export const SectionWrap = styled.div`
@@ -47,7 +54,11 @@ export const DetailsWrap = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
+
+  @media (min-width: 768px) {
+    gap: 100px;
+  }
 `
 
 export const Detailscontainer = styled.div`

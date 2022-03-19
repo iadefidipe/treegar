@@ -46,6 +46,8 @@ export const FooterContact = styled.div`
 `
 export const ContactHeader = styled(Heading6)``
 export const ContactText = styled(fontRegular)`
+    font-size: 13px;
+
   & > span {
     color: ${(props) => props.theme.colors.accent};
     text-decoration: underline;
@@ -58,6 +60,16 @@ export const ContactText = styled(fontRegular)`
 
       transform: translateY(-7px);
     }
+  }
+  @media (min-width: 766px) {
+    font-size: 16px;
+  }
+`
+export const DisclosureText = styled(fontRegular)`
+    font-size: 13px;
+
+  @media (min-width: 766px) {
+    font-size: 14px;
   }
 `
 export const ContactLink = styled(fontRegular)`

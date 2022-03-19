@@ -14,13 +14,13 @@ const BgWrap = styled.div`
 
   @media (max-width: 500px) {
     background: ${(props) =>
-      `url(${props.theme.bg.bgTree.src}) no-repeat 210px 380px`};
+      `url(${props.theme.bg.bgTree.src}) no-repeat 228px 440px`};
     background-size: 204.24px 274px;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     background: ${(props) =>
-      `url(${props.theme.bg.bgTree.src}) no-repeat 900px 420px`};
+      `url(${props.theme.bg.bgTree.src}) no-repeat 1100px 650px`};
     background-size: none;
   }
 `
