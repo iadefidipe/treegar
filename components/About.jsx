@@ -5,7 +5,6 @@ import { BorderButton } from "./shared/Buttons"
 import { maxWidth } from "./shared/BaseStyles"
 import Link from "next/link"
 
-
 const Wrapper = styled.section`
   ${maxWidth}
   padding: 100px 21px;
@@ -18,7 +17,9 @@ const Wrapper = styled.section`
     text-align: center;
   }
 `
-const SectionHeader = styled(Heading2)``
+const SectionHeader = styled(Heading2)`
+
+`
 const SubHeader = styled(Heading3)`
   & > span {
     color: ${(props) => props.theme.colors.shade};
@@ -71,7 +72,9 @@ function About() {
           to Africans.
         </SectionText>
       </AboutWrap>
-      <Link href='/Getapp' passHref ><Button> Sign me up! </Button></Link>
+      <Link href='/Getapp' passHref>
+        <Button> Sign me up! </Button>
+      </Link>
     </Wrapper>
   )
 }
