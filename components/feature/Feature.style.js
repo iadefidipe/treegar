@@ -5,6 +5,7 @@ import { Heading4, Heading5 } from "../shared/Headings"
 
 export const Wrapper = styled.section`
   ${maxWidth}
+  max-width: 1440px;
   display: flex;
   flex-direction: column;
   gap: 37px;
@@ -12,7 +13,7 @@ export const Wrapper = styled.section`
     flex-direction: row;
     align-items: center;
   }
-  margin-bottom: 70px;
+  margin:0 auto 70px;
 `
 
 export const SectionHeader = styled(Heading4)`
