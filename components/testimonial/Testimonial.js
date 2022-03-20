@@ -32,7 +32,7 @@ function Testimonial() {
   const nextSlide = () => {
     setActive(active === length - 1 ? 0 : active + 1)
   }
-  console.log(active)
+  
 
   return (
     <Wrapper>

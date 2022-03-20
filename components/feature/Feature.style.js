@@ -17,25 +17,28 @@ export const Wrapper = styled.section`
 
 export const SectionHeader = styled(Heading4)`
   line-height: 30px;
+  max-width: 240px;
   & > span {
     color: ${(props) => props.theme.colors.shade};
   }
 
   @media (min-width: 768px) {
+    max-width: 100%;
     line-height: 60px;
   }
 `
 export const FeatureContainer = styled.div`
-  border: 2px red solid;
   display: grid;
   gap: 52px;
+  @media (max-width: 425px) {
+    max-width: 288px;
+  }
   @media (min-width: 768px) {
     grid-template-columns: 1fr 1fr;
   }
 `
 export const FeatureWrap = styled.div``
 export const FeaturesWrap = styled.div`
-  border: 2px aqua solid;
   margin-right: 100;
   display: flex;
   flex-direction: column;
@@ -54,7 +57,6 @@ export const FeatureText = styled.p`
   ${fontRegular}
 `
 export const BackgroundWrap = styled.div`
-  border: 2px solid green;
   min-height: 379px;
   background: ${(props) =>
     ` url(${props.theme.bg.bgBrand.src}) no-repeat left center `};

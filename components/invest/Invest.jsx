@@ -38,7 +38,6 @@ function Invest() {
   const [profit, setProfit] = useState(getProfit(percent, amount))
 
   const handleToggle = (index, percentages) => {
-    console.log("index", index)
 
     setToggle(index)
 

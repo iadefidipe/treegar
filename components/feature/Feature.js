@@ -1,4 +1,3 @@
-import styled from "styled-components"
 import pageData from "../../data/pageData"
 import {
   Wrapper,

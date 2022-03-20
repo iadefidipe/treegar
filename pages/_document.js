@@ -37,6 +37,7 @@ export default class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600;700&display=swap'
             rel='stylesheet'
           />
+           <link rel='icon' type='image/svg' sizes='32x32' href='/favicon.svg' />
         </Head>
         <body>
           <Main />

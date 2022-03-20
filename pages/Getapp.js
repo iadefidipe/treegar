@@ -18,7 +18,6 @@ const SecText = styled(Heading2)`
   margin: 0 auto;
   max-width: 400px;
   font-size: 1.6875rem;
-
   line-height: 31px;
   & > span {
     color: ${(props) => props.theme.colors.accent};
