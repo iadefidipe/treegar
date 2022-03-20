@@ -6,17 +6,25 @@ import { fontRegular } from "../components/shared/typography"
 const baseFlex = css`
   display: flex;
   flex-direction: column;
-  gap: 17px;
+  gap: 10px;
+
+  @media (min-width: 768px) {
+    gap: 17px;
+  }
+`
+
+const fontSize = css`
+  font-size: 0.625rem;
+  @media (min-width: 768px) {
+    font-size: 1.0625rem;
+  }
 `
 
 export const Wrapper = styled.main`
-    margin: 0 21px;
-
+  margin: 0 21px;
 `
 
-export const PageContainer = styled(InnerWrapper)`
-  
-`
+export const PageContainer = styled(InnerWrapper)``
 
 export const PageHeader = styled(Heading1)`
   margin: 200px 0 27px;
@@ -24,8 +32,12 @@ export const PageHeader = styled(Heading1)`
 
 export const PolicyContainer = styled.div`
   ${baseFlex}
-  gap: 51px;
+  gap: 30px;
   margin-bottom: 50px;
+
+  @media (min-width: 768px) {
+    gap: 51px;
+  }
 
   & section:first-child {
     ${baseFlex}
@@ -60,10 +72,14 @@ export const PolicyContainer = styled.div`
   }
   & section:nth-child(5) {
     ${baseFlex}
-    gap:34px;
+    gap:20px;
 
     & div:last-child {
       ${baseFlex}
+    }
+
+    @media (min-width: 768px) {
+      gap: 34px;
     }
   }
 
@@ -84,8 +100,9 @@ export const PolicyContainer = styled.div`
   }
 `
 
-export const PageText = styled(fontRegular)`
-  font-size: 1.0625rem;
+export const PageText = styled.p`
+  ${fontSize}
+  opacity: 0.8;
 `
 
 export const PageSection = styled.section``
@@ -94,7 +111,7 @@ export const PageSubSection = styled.div`
 `
 
 export const SubHeader = styled(Heading7)`
-  opacity: 0.8;
+  ${fontSize}
 `
 export const SubSection = styled.div``
 
@@ -102,7 +119,8 @@ export const SubList = styled.ul`
   padding: 0 21px;
 `
 export const OrderedList = styled.li`
-  color: ${(props) => props.theme.colors.secGrey};
+  ${fontSize}
+  opacity: 0.8;
 `
 export const ListSection = styled.div`
   ${baseFlex}
