@@ -22,7 +22,7 @@ function policy() {
   return (
     <>
       <Head>
-        <title> Treegar - Privacy Policy </title>
+      <title> treegar - Invest in US stocks from Africa</title>
       </Head>
       <Wrapper>
         <PageContainer>

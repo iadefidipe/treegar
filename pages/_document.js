@@ -37,7 +37,10 @@ export default class MyDocument extends Document {
             href='https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;500;600;700&display=swap'
             rel='stylesheet'
           />
-           <link rel='icon' type='image/svg' sizes='32x32' href='/favicon.svg' />
+          <link rel='icon' type='image/svg' sizes='32x32' href='/favicon.svg' />
+          <link rel='apple-touch-icon' href='/favicon.svg' />
+          <link rel='manifest' href='%PUBLIC_URL%/manifest.json' />
+          <link rel='preconnect' href='https://fonts.gstatic.com' />
         </Head>
         <body>
           <Main />

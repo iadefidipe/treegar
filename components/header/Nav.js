@@ -17,8 +17,8 @@ function Nav() {
           </NavLinkWrap>
         ))}
       </NavLinks>
-      <Link href='/Getapp' passHref>
-        <Button color={true} grey={router.pathname === "/Getapp"}>
+      <Link href='/getapp' passHref>
+        <Button color grey={router.pathname === "/Getapp"}>
           Get the app
         </Button>
       </Link>

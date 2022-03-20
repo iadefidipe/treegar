@@ -33,13 +33,13 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title> Treegar - Fintech Platform</title>
+        <title> treegar - Invest in US stocks from Africa</title>
         <meta charset='UTF-8' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
 
         <meta
           name='description'
-          content='Treegar is a fintech platform that enable you to buy and sell local and U.S stocks directly from your mobile phone in real-time. '
+          content='Treegar will enable you to become a global investor with the tap of a button. Buy and sell local and U.S stocks with ease from your mobile phone and grow your portfolio in a foreign market. '
         />
         <meta
           name='keyword'
@@ -49,19 +49,17 @@ export default function Home() {
 
         <meta name='theme-color' content='#4CC800' />
         <meta name='twitter:card' content='summary' key='twcard' />
-        <meta name='twitter:creator' content='designo' key='twhandle' />
+        <meta name='twitter:creator' content='treegar' key='twhandle' />
         <meta property='og:url' content='https://treegar.com/' key='ogurl' />
         <meta
           property='og:image'
-          content='https://treegar.com/preview.jpg'
+          content='https://treegar.com/preview.png'
           key='ogimage'
         />
-        <meta property='og:site_name' content='designo' key='ogsitename' />
+        <meta property='og:site_name' content='treegar' key='ogsitename' />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='630' />
-        <link rel='apple-touch-icon' href='/favicon.svg' />
-        <link rel='manifest' href='%PUBLIC_URL%/manifest.json' />
-        <link rel='preconnect' href='https://fonts.gstatic.com' />
+        
       </Head>
       <Wrapper>
         <BgWrap>

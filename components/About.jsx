@@ -72,7 +72,7 @@ function About() {
           to Africans.
         </SectionText>
       </AboutWrap>
-      <Link href='/Getapp' passHref>
+      <Link href='/getapp' passHref>
         <Button> Sign me up! </Button>
       </Link>
     </Wrapper>

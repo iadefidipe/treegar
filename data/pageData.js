@@ -28,8 +28,8 @@ const pageData = {
   screenScroller: [Screen1, Screen2, Screen3, Screen4, Screen5],
   navText: [
     { text: "Home", link: "/" },
-    { text: "FAQs", link: "/" },
-    { text: "Blog", link: "/" },
+    { text: "FAQs", link: " https://faq.treegar.com/en/" },
+    { text: "Blog", link: "https://medium.com/@treegar" },
   ],
   slides: [
     "Real-Time Trading",
@@ -134,15 +134,15 @@ const pageData = {
     company: {
       headerText: "Company",
       link: [
-        { text: "Privacy Policy", link: "/policy" },
-        { text: "FAQs", link: "/" },
-        { text: "Blog", link: "/" },
+        { text: "Privacy Policy", link: "/privacy" },
+        { text: "FAQs", link: " https://faq.treegar.com/en/" },
+        { text: "Blog", link: "https://medium.com/@treegar" },
       ],
     },
     contact: {
       headerText: "Contact",
       email: "support@treegar.com",
-      phoneNo: "+2340000000000",
+      // phoneNo: "+2340000000000",
     },
 
     address: [
