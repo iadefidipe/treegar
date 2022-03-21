@@ -43,7 +43,7 @@ export default function Home() {
         />
         <meta
           name='keyword'
-          content='trading, fintech platform, financial markets ,investing'
+          content='trading, trading platform, financial markets, stocks, investing'
         />
         {/* <!-- THEME COLOR FOR CHROME MOBILE BROWSERS --> */}
 
